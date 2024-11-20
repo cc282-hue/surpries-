@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lan g="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Google font -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f7a1d8, #ffd56b); /* Gradient background */
+            text-align: center;
+            padding: 100px 20px;
+            margin: 0;
+            height: 300vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .birthday-cake {
+            font-size: 250px;
+            color: #ff6347; /* Birthday cake color (tomato red) */
+            margin-bottom: 20px;
+        }
+
+        .birthday-message {
+            font-size: 2.5em;
+            color: #fff;
+            font-weight: 600;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+
+        .birthday-name {
+            color: #ff69b4; /* Pink for the name */
+            font-style: italic;
+        }
+
+        .birthday-photo {
+            max-width: 250px; /* Image size control */
+            margin-top: 30px;
+            border-radius: 10px; /* Optional: rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+        }
+
+        .birthday-image {
+            max-width: 250px; /* Limit the size of the image */
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+        }
+
+        .confetti {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            right: 0;
+            animation: confetti 2s ease-in-out infinite;
+        }
+
+        .confetti span {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff6347;
+            animation: fall 2s infinite;
+            opacity: 0;
+        }
+
+        /* Confetti falling animation */
+        @keyframes fall {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(400px); opacity: 0; }
+        }
+
+        /* Confetti movement animation */
+        @keyframes confetti {
+            0% { transform: rotate(0); }
+            25% { transform: rotate(90deg); }
+            50% { transform: rotate(180deg); }
+            75% { transform: rotate(270deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Styling for the audio/video container */
+        .video-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-cake">
+        🎂
+    </div>
+    <div class="birthday-message">
+        Happy Birthday, <span class="birthday-name">Arjun</span>! 🎉🎉<br>
+        "Happy Birthday, my dear friend! Thank you for always being there through the good times and the bad. I’m so grateful for our friendship and the endless laughter you bring into my life."
+    </div>
+
+    <!-- Add the Birthday Photo -->
+    <img src="https://assets.onecompiler.app/42xppd26y/42ynn4v3p/IMG_1198.JPG" alt="Birthday Photo" class="birthday-photo">
+  v
+  <!-- Add the new image from the provided URL -->
+    <img src="https://assets.onecompiler.app/42xppd26y/42yns9ymq/WhatsApp%20Image%202024-11-20%20at%2012.06.49%20PM.jpeg" alt="New Birthday Image" class="birthday-image">
+
+    <!-- Confetti animation (for extra fun!) -->
+    <div class="confetti">
+        <span style="left: 10%; animation-delay: 0s;"></span>
+        <span style="left: 25%; animation-delay: 0.5s;"></span>
+        <span style="left: 40%; animation-delay: 1s;"></span>
+        <span style="left: 60%; animation-delay: 1.5s;"></span>
+        <span style="left: 80%; animation-delay: 2s;"></span>
+    </div>
+
+    <!-- YouTube Video Embed -->
+    <div class="video-container">
+        <iframe width="200" height="150" src="https://www.youtube.com/embed/5u4xTa3LR2U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+ 
+       
